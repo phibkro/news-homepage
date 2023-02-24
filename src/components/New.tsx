@@ -26,14 +26,16 @@ export default function New() {
       return <>
         <hr className="border-grayish_blue my-5" />
         <Entry key={index} 
-          title={entry.title} 
-          content={entry.content} 
+          {...entry}
+          // title={entry.title} 
+          // content={entry.content} 
         />
       </> 
     }
     return <Entry key={index} 
-      title={entry.title} 
-      content={entry.content} 
+      {...entry}
+      // title={entry.title} 
+      // content={entry.content} 
     />
   })
   return <section className="

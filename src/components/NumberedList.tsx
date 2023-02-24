@@ -36,11 +36,12 @@ export function NumberedEntry({index, src, alt, title, content}:entryProps) {
 export default function NumberedList() {
   const listItems = entriesData.map((entry) => 
     <NumberedEntry key={entry.index} 
-    index={entry.index}
-    title={entry.title}
-    content={entry.content}
-    src={entry.src}
-    alt={entry.alt}
+    {...entry}
+    // index={entry.index}
+    // title={entry.title}
+    // content={entry.content}
+    // src={entry.src}
+    // alt={entry.alt}
     />
   )
   return <section>
