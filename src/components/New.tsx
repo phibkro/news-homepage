@@ -1,17 +1,4 @@
 import { entryProps } from "../types/types"
-const entriesData = [{
-    title: "Hydrogen VS Electric Cars",
-    content: "Will hydrogen-fueled cars ever catch up to EVs?"
-  },
-  {
-    title: "The Downsides of AI Artistry",
-    content: "What are the possible adverse effects of on-demand AI image generation?",
-  },
-  {
-    title: "Is VC Funding Drying Up?",
-    content: "Private funding by VC firms is down 50% YOY. We take a look at what that means",
-  },
-]
 
 export function Entry({title, content}:entryProps) {
   return <div>
@@ -20,7 +7,10 @@ export function Entry({title, content}:entryProps) {
   </div>
 }
 
-export default function New() {
+interface newProps {
+  entriesData: entryProps[],
+}
+export default function New({entriesData}:newProps) {
   const entriesItems = entriesData.map((entry, index) => {
     if (index != 0) {
       return <>

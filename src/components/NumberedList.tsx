@@ -1,28 +1,6 @@
 import { entryProps } from "../types/types";
 
-const entriesData = [
-  {
-    title: "Reviving Retro PCs",
-    content: "What happens when old PCs are given modern upgrades?",
-    index: "01",
-    src: "/images/image-retro-pcs.jpg",
-    alt: "A small retro pc surrounded by old technology",
-  },
-  {
-    title: "Top 10 Laptops of 2022",
-    content: "Our best picks for various needs and budgets",
-    index: "02",
-    src: "/images/image-top-laptops.jpg",
-    alt: "Close-up of keycaps on a laptop"
-  },
-  {
-    title: "The Growth of Gaming",
-    content: "How the pandemic has sparked fresh opportunities",
-    index: "03",
-    src: "/images/image-gaming-growth.jpg",
-    alt: "A hand catching a Playstation 5 controller",
-  }
-]
+
 export function NumberedEntry({index, src, alt, title, content}:entryProps) {
   return <div className="w-full flex my-8 gap-6">
     <img src={src} alt={alt} className="w-1/4"/>
@@ -33,7 +11,10 @@ export function NumberedEntry({index, src, alt, title, content}:entryProps) {
     </div>
   </div>
 }
-export default function NumberedList() {
+interface numberedListProps {
+  entriesData: entryProps[],
+}
+export default function NumberedList({entriesData}:numberedListProps) {
   const listItems = entriesData.map((entry) => 
     <NumberedEntry key={entry.index} 
     {...entry}
