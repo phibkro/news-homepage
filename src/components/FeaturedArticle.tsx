@@ -16,8 +16,8 @@ export function Button({href, children, className}:buttonProps) {
   </a>
 }
 
-export default function FeaturedArticle({title, content, src, alt}:entryProps) {
-  return <div className="flex flex-col gap-6">
+export default function FeaturedArticle({title, content, src, alt, className}:entryProps) {
+  return <div className={`flex flex-col gap-6 ${className}`}>
     <img src={src} alt={alt} />
     <h1 className="text-5xl font-bold">{title}</h1>
     <p className="text-paragraph text-dark_grayish_blue">{content}</p>

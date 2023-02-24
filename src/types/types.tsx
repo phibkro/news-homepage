@@ -4,4 +4,5 @@ export interface entryProps {
   src?: string,
   alt?: string,
   index?: string,
+  className?: string,
 }
