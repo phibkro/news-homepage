@@ -42,8 +42,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: https://github.com/Skuiggly/news-homepage
-- Live Site URL: https://news-homepage-skuiggly.vercel.app/
+- Solution URL: https://github.com/phibkro/news-homepage
+- Live Site URL: https://news-homepage-phibkro.vercel.app/
 
 ## My process
 
@@ -78,5 +78,5 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Skuiggly](https://personal-portfolio-skuiggly.vercel.app/)
-- Frontend Mentor - [@Skuiggly](https://www.frontendmentor.io/profile/Skuiggly)
+- Website - [phibkro](https://personal-portfolio-skuiggly.vercel.app/)
+- Frontend Mentor - [@phibkro](https://www.frontendmentor.io/profile/Skuiggly)
