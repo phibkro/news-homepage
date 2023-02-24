@@ -1,3 +1,4 @@
+import { entryProps } from "../types/types"
 const entriesData = [{
     title: "Hydrogen VS Electric Cars",
     content: "Will hydrogen-fueled cars ever catch up to EVs?"
@@ -12,10 +13,6 @@ const entriesData = [{
   },
 ]
 
-interface entryProps {
-  title: string,
-  content: string,
-}
 export function Entry({title, content}:entryProps) {
   return <div>
     <a href=""><h3 className="font-bold mb-1 hover:text-primary_orange">{title}</h3></a>
