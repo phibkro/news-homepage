@@ -14,7 +14,7 @@ export default function New({entriesData}:newProps) {
   const entriesItems = entriesData.map((entry, index) => {
     if (index != 0) {
       return <>
-        <hr className="border-grayish_blue my-5" />
+        <hr className="border-grayish_blue" />
         <Entry key={index} 
           {...entry}
           // title={entry.title} 
@@ -29,6 +29,7 @@ export default function New({entriesData}:newProps) {
     />
   })
   return <section className="
+  flex flex-col gap-6
   bg-very_dark_blue text-white p-4">
     <h2 className="text-primary_orange text-3xl font-extrabold">New</h2>
     {entriesItems}

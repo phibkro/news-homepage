@@ -2,7 +2,7 @@ import { entryProps } from "../types/types";
 
 
 export function NumberedEntry({index, src, alt, title, content}:entryProps) {
-  return <div className="w-full flex my-8 gap-6">
+  return <div className="w-full flex gap-6">
     <img src={src} alt={alt} className="w-1/4"/>
     <div className="flex flex-col gap-2">
       <h2 className="text-grayish_blue text-3xl font-bold">{index}</h2>
@@ -25,7 +25,7 @@ export default function NumberedList({entriesData}:numberedListProps) {
     // alt={entry.alt}
     />
   )
-  return <section>
+  return <section className="flex flex-col gap-8 mb-6">
     {listItems}
   </section>
 }
