@@ -22,6 +22,9 @@ module.exports = {
       fontFamily: {
         sans: ['Inter, sans-serif'],
       },
+      fontSize: {
+        paragraph: "15px",
+      },
     },
   },
   plugins: [],
