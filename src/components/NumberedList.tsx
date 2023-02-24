@@ -6,7 +6,7 @@ export function NumberedEntry({index, src, alt, title, content}:entryProps) {
     <img src={src} alt={alt} className="w-1/4"/>
     <div className="flex flex-col gap-2">
       <h2 className="text-grayish_blue text-3xl font-bold">{index}</h2>
-      <h3 className="text-very_dark_blue font-bold">{title}</h3>
+      <a href=""><h3 className="text-very_dark_blue font-bold hover:text-primary_red">{title}</h3></a>
       <p className="text-dark_grayish_blue">{content}</p>
     </div>
   </div>
