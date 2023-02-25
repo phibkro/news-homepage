@@ -1,8 +1,7 @@
 import FeaturedArticle from "./components/FeaturedArticle"
-import NavBar from "./components/NavBar"
+import Header from "./components/Header"
 import New from "./components/New"
 import NumberedList from "./components/NumberedList"
-import {Logo} from "./components/svg/SVGs"
 
 const featuredData = {
   title: "The Bright Future of Web 3.0?",
@@ -49,27 +48,28 @@ const numberedData = [
 function App() {
   return (
     <div className="
-    mx-auto
-    max-w-xl
-    flex flex-col
-    bg-off_white px-2">
-      <header className="
-      my-4 
-      flex justify-between items-center">
-        <a href=""><Logo/></a>
-        <NavBar/>
-      </header>
-      <div className="
-      flex flex-col gap-16
-      justify-center items-center">
-        <main>
-          <article>
-            <FeaturedArticle {...featuredData} />
-          </article>
-        </main>
-        <New entriesData={newData}/>
-        <NumberedList entriesData={numberedData} />
-      </div>
+    grid grid-cols-1 gap-8
+    bg-off_white px-2
+    laptop:grid-cols-3
+    laptop:min-w-screen laptop:min-h-screen
+    laptop:m-6
+    ">
+      <Header className="
+      flex justify-between items-center
+      laptop:col-span-3
+      " />
+      <FeaturedArticle {...featuredData} 
+      className="grid grid-cols-1 gap-6
+      laptop:col-span-2 laptop:grid-cols-2
+      "/>
+      <New entriesData={newData} 
+      className="flex flex-col gap-6
+      laptop:col-span-1
+      "/>
+      <NumberedList entriesData={numberedData} 
+      className="flex flex-col gap-8 mb-6
+      laptop:flex-row laptop:col-span-3
+      "/>
     </div>
   )
 }

@@ -17,10 +17,13 @@ export function Button({href, children, className}:buttonProps) {
 }
 
 export default function FeaturedArticle({title, content, src, alt, className}:entryProps) {
-  return <div className={`flex flex-col gap-6 ${className}`}>
-    <img src={src} alt={alt} />
+  return <main className={`${className}`}>
+    <img src={src} alt={alt} className="laptop:col-span-2" />
     <h1 className="text-5xl font-bold">{title}</h1>
-    <p className="text-paragraph text-dark_grayish_blue">{content}</p>
-    <Button href="">READ MORE</Button>
-  </div>
+    <div>
+      <p className="text-paragraph text-dark_grayish_blue">{content}</p>
+      <br />
+      <Button href="">READ MORE</Button>
+    </div>
+  </main>
 }
