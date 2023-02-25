@@ -62,8 +62,15 @@ First I broke down the whole website into it's bare components. That way I could
 - I learnt how to customize my Tailwind setup with custom values.
 - How to use media queries both in React and Tailwind.
 - How to add a sidebar hamburger menu that rolls out from the side.
+- How to organize a layout using grid and make it seamlessly switch between mobile and desktop layout
 
 ### Continued development
+
+I need to practice planning out my website beforehand.
+I had pretty much completed everything except for the sidebar using Flexbox when I realized
+it would be much easier to switch between the mobile and desktop layout using Grid.
+This meant I had to refactor my whole project from Flexbox to Grid. It didn't take as much time
+as I initially thought it would, but better planning would've avoided this problem altogether.
 
 TODO
 
@@ -78,5 +85,5 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [phibkro](https://personal-portfolio-skuiggly.vercel.app/)
-- Frontend Mentor - [@phibkro](https://www.frontendmentor.io/profile/Skuiggly)
+- Website - [phibkro](https://personal-portfolio-phibkro.vercel.app/)
+- Frontend Mentor - [@phibkro](https://www.frontendmentor.io/profile/phibkro)
