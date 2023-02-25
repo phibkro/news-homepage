@@ -55,8 +55,10 @@ function App() {
     laptop:m-6
     ">
       <Header className="
+      mt-4
       flex justify-between items-center
       laptop:col-span-3
+      laptop:mt-0
       " />
       <FeaturedArticle {...featuredData} 
       className="grid grid-cols-1 gap-6
