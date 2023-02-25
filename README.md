@@ -86,4 +86,4 @@ Use this section to outline areas that you want to continue focusing on in futur
 ## Author
 
 - Website - [phibkro](https://personal-portfolio-phibkro.vercel.app/)
-- Frontend Mentor - [@phibkro](https://www.frontendmentor.io/profile/phibkro)
+- Frontend Mentor - [@Skuiggly](https://www.frontendmentor.io/profile/Skuiggly)
