@@ -6,8 +6,8 @@ interface headerProps {
 }
 export default function Header({className}:headerProps) {
   return <header className={`
-  ${className}
-  `}>
+  flex justify-between items-center
+  ${className}`}>
     <a href=""><Logo/></a>
 
     <NavBar/>

@@ -30,11 +30,12 @@ export default function New({entriesData, className}:newProps) {
     />
   })
   return <section className={`
+  flex flex-col gap-6
   bg-very_dark_blue text-white p-4
-  ${className}
-  `}
->
-    <h2 className="text-primary_orange text-3xl font-extrabold">New</h2>
+  ${className}`}>
+    <h2 className="text-primary_orange text-3xl font-extrabold">
+      New
+    </h2>
     {entriesItems}
   </section>
 }

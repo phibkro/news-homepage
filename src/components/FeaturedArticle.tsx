@@ -17,8 +17,13 @@ export function Button({href, children, className}:buttonProps) {
 }
 
 export default function FeaturedArticle({title, content, src, alt, className}:entryProps) {
-  return <main className={`${className}`}>
-    <img src={src} alt={alt} className="laptop:col-span-2" />
+  return <main className={`
+  grid grid-cols-1 gap-6
+  laptop:grid-cols-2
+  ${className}`}>
+    <img src={src} alt={alt} className="
+    laptop:col-span-2
+    "/>
     <h1 className="text-5xl font-bold">{title}</h1>
     <div>
       <p className="text-paragraph text-dark_grayish_blue">{content}</p>
