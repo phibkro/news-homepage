@@ -21,6 +21,9 @@ interface featuredarticleProps extends entryProps {
   src_laptop?: string,
 }
 export default function FeaturedArticle({title, content, src, src_laptop, alt, className, currentWindowWidth}:featuredarticleProps) {
+  src = currentWindowWidth && currentWindowWidth >= 1024 ? 
+    src_laptop :
+    src
   return <main className={`
   grid grid-cols-1 gap-6
   laptop:grid-cols-2
