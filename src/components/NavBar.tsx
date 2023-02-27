@@ -7,7 +7,7 @@ interface linkProps {
   children: React.ReactNode,
 }
 export function Link({href, children}:linkProps) {
-  return <a href={href} className="m-4 text-very_dark_blue hover:text-primary_red">
+  return <a href={href} className="text-very_dark_blue hover:text-primary_red">
     {children}
   </a>
 }
@@ -27,7 +27,7 @@ export default function NavBar() {
       window.removeEventListener("resize", updateDimensions);
   }, [])
   if (currentWidth >= 1024) {
-    return <nav className="flex items-center">
+    return <nav className="flex gap-4 items-center">
       <Link href="">Home</Link>
       <Link href="">New</Link>
       <Link href="">Popular</Link>
