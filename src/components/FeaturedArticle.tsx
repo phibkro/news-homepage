@@ -16,7 +16,11 @@ export function Button({href, children, className}:buttonProps) {
   </a>
 }
 
-export default function FeaturedArticle({title, content, src, alt, className}:entryProps) {
+interface featuredarticleProps extends entryProps {
+  currentWindowWidth?: number,
+  src_laptop?: string,
+}
+export default function FeaturedArticle({title, content, src, src_laptop, alt, className, currentWindowWidth}:featuredarticleProps) {
   return <main className={`
   grid grid-cols-1 gap-6
   laptop:grid-cols-2

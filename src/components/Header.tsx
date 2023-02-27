@@ -3,13 +3,14 @@ import NavBar from "./NavBar"
 
 interface headerProps {
   className?: string,
+  currentWindowWidth?: number,
 }
-export default function Header({className}:headerProps) {
+export default function Header({className, currentWindowWidth}:headerProps) {
   return <header className={`
   flex justify-between items-center
   ${className}`}>
     <a href=""><Logo/></a>
 
-    <NavBar/>
+    <NavBar currentWindowWidth={currentWindowWidth}/>
   </header>
 }

@@ -1,5 +1,3 @@
-import { useState } from "react"
-import { useEffect } from "react";
 import DropdownMenu from "./DropdownMenu";
 
 interface linkProps {
@@ -12,21 +10,11 @@ export function Link({href, children}:linkProps) {
   </a>
 }
 
-export default function NavBar() {
-  const [currentWidth, setWindowWidth] = useState(0);
-  function updateDimensions() {
-    const width = window.innerWidth;
-    setWindowWidth(width);
-  }
-  useEffect(() => {
-    updateDimensions();
-
-    window.addEventListener("resize", updateDimensions);
-
-    return () =>
-      window.removeEventListener("resize", updateDimensions);
-  }, [])
-  if (currentWidth >= 1024) {
+interface navbarProps {
+  currentWindowWidth?: number,
+}
+export default function NavBar({currentWindowWidth}:navbarProps) {
+  if (currentWindowWidth && currentWindowWidth >= 1024) {
     return <nav className="flex gap-4 items-center">
       <Link href="">Home</Link>
       <Link href="">New</Link>
