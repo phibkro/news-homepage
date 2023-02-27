@@ -1,5 +1,5 @@
 import { Logo } from "./svg/SVGs"
-import NavBar from "./NavBar"
+import Nav from "./Nav"
 
 interface headerProps {
   className?: string,
@@ -11,6 +11,6 @@ export default function Header({className, currentWindowWidth}:headerProps) {
   ${className}`}>
     <a href=""><Logo/></a>
 
-    <NavBar currentWindowWidth={currentWindowWidth}/>
+    <Nav currentWindowWidth={currentWindowWidth}/>
   </header>
 }
