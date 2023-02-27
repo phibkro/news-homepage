@@ -2,9 +2,7 @@ import { entryProps } from "../types/types";
 
 
 export function NumberedEntry({index, src, alt, title, content}:entryProps) {
-  return <article className="w-full grid grid-cols-4 gap-6">
-    <img src={src} alt={alt} className="col-span-1"/>
-    <div className="col-span-3 flex flex-col gap-2">
+    <img src={src} alt={alt} className="col-span-1 object-cover h-full w-1/3"/>
       <h2 className="text-grayish_blue text-3xl font-bold">{index}</h2>
       <a href=""><h3 className="text-very_dark_blue font-bold hover:text-primary_red">{title}</h3></a>
       <p className="text-dark_grayish_blue">{content}</p>
